@@ -22,33 +22,6 @@ void takeinput(){
     freopen("D:\\coding\\output.txt","w",stdout);
     #endif
 }
-int root(char key) {
-  if (tree[0] != '\0')
-    cout << "Tree already had root";
-  else
-    tree[0] = key;
-  return 0;
-}
- 
-int set_left(char key, int parent) {
-  if (tree[parent] == '\0')
-    cout << "\nCan't set child at "
-    << (parent * 2) + 1
-    << " , no parent found";
-  else
-    tree[(parent * 2) + 1] = key;
-  return 0;
-}
- 
-int set_right(char key, int parent) {
-  if (tree[parent] == '\0')
-    cout << "\nCan't set child at "
-    << (parent * 2) + 2
-    << " , no parent found";
-  else
-    tree[(parent * 2) + 2] = key;
-  return 0;
-}
 void sk() {
     // Your code goes here
     int n;
